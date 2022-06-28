@@ -28,7 +28,7 @@ class Conexao():
                         self.usuario = self.usuario1.strip('\n')
                         self.senha = 'ninguemsabe'
             if self.bancodados != 'SQLSERVER':
-                # self.ora_conn = (usuario+"/"+senha+"@"+ bancoa+"/"+bancob)
+                self.ora_conn = (usuario+"/"+senha+"@"+ bancoa+"/"+bancob)
                 self.ora_conn = ('linx/ninguemsabe@contevaio/XE')
 
         except OSError:
